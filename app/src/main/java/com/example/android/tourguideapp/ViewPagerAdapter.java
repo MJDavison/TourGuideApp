@@ -23,7 +23,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
             case 0:
                 return new DiscoverFragment();
             case 1:
-                return new ExtraFragment();
+                return new FavouritesFragment();
             default:
                 return new DiscoverFragment();
         }
@@ -41,7 +41,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
             case 0:
                 return "Discover";
             case 1:
-                return "Extra";
+                return "Favourites";
             default:
                 return "Discover!";
         }

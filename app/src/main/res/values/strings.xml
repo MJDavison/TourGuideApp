@@ -2,4 +2,21 @@
     <string name="app_name">Tour Guide App</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="charlesChurchDetails">Details</string>
+    <string name="charles_church_details">Charles Church Details</string>
+    <string name="theatre_royal_details">Theatre Royal D#etails</string>
+    <string name="the_tudor_rose_details">The Tudor Rose Details</string>
+    <string name="drake_circus_details">Drakes Circus</string>
+    <string name="charles_church_name">Charles Church</string>
+    <string name="theatre_royal_plymouth_name">Theatre Royal Plymouth</string>
+    <string name="the_tudor_rose_name"><![CDATA[The Tudor Rose Tea Rooms & Garden]]></string>
+    <string name="drake_circus_name">Drake Circus Shopping Centre</string>
+    <string name="charles_church_street">Charles Street</string>
+    <string name="royal_parade_street">Royal Parade</string>
+    <string name="the_tudor_rose_street">36 New Street</string>
+    <string name="drakes_circus_street">1 Charles Street</string>
+    <string name="charles_church_postcode">PL4 0BA</string>
+    <string name="theatre_royal_postcode">PL1 2TR</string>
+    <string name="the_tudor_rose_postcode">PL1 2NA</string>
+    <string name="drake_circus_postcode">PL1 1EA</string>
 </resources>

@@ -46,8 +46,7 @@ public class RecyclerViewAdapter
     public void onBindViewHolder(ViewHolder holder, int position) {
 
 
-        holder.mIdView.setText(mDataset.get(position).id);
-        holder.mContentView.setText(mDataset.get(position).content);
+        holder.mContentView.setText(mDataset.get(position).locationName);
 
         holder.itemView.setTag(mDataset.get(position));
         holder.itemView.setOnClickListener(mOnClickListener);
@@ -59,12 +58,10 @@ public class RecyclerViewAdapter
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder {
-        final TextView mIdView;
         final TextView mContentView;
 
         public ViewHolder(View itemView) {
             super(itemView);
-            mIdView = (TextView) itemView.findViewById(R.id.id_text);
             mContentView = (TextView) itemView.findViewById(R.id.content);
         }
     }

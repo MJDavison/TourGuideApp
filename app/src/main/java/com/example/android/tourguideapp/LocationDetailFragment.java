@@ -12,13 +12,16 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.material.appbar.CollapsingToolbarLayout;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import static com.example.android.tourguideapp.LocationContent.addItemToFavourites;
 
 
 public class LocationDetailFragment extends Fragment {
 
     public static final String ARG_ITEM_ID = "item_id";
     private static final String LOG_TAG = LocationDetailFragment.class.getSimpleName();
-
+    FloatingActionButton fab;
     private LocationContent.LocationItem mItem;
 
     public LocationDetailFragment() {
@@ -30,13 +33,14 @@ public class LocationDetailFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         if (getArguments().containsKey(ARG_ITEM_ID)) {
-            mItem = LocationContent.ITEM_MAP.get(getArguments().getString(ARG_ITEM_ID));
+            mItem = LocationContent.LIST_ITEM_MAP.get(getArguments().getString(ARG_ITEM_ID));
 
             Activity activity = this.getActivity();
             CollapsingToolbarLayout appBarLayout = (CollapsingToolbarLayout) activity.findViewById(R.id.toolbar_layout);
             if (appBarLayout != null) {
-                appBarLayout.setTitle(mItem.content);
+                appBarLayout.setTitle(mItem.locationName);
             }
+            fab = activity.findViewById(R.id.fab);
         }
     }
 
@@ -50,6 +54,13 @@ public class LocationDetailFragment extends Fragment {
         if (mItem != null) {
             ((TextView) rootView.findViewById(R.id.location_detail)).setText(mItem.details);
         }
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addItemToFavourites(mItem);
+            }
+        });
         return rootView;
     }
 }
