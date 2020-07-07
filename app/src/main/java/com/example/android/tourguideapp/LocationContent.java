@@ -13,7 +13,7 @@ public class LocationContent {
     public static void addItemToList(LocationItem item) {
         if (!List.contains(item)) {
             List.add(item);
-            LIST_ITEM_MAP.put(item.id, item);
+            LIST_ITEM_MAP.put(item.mID, item);
         }
 
     }
@@ -21,7 +21,14 @@ public class LocationContent {
     public static void addItemToFavourites(LocationItem item) {
         if (!Favourites.contains(item)) {
             Favourites.add(item);
-            FAVOURITES_ITEM_MAP.put(item.id, item);
+            FAVOURITES_ITEM_MAP.put(item.mID, item);
+        }
+    }
+
+    public static void removeItemFromFavourites(LocationItem item) {
+        if (Favourites.contains(item)) {
+            Favourites.remove(item);
+            FAVOURITES_ITEM_MAP.remove(item.mID);
         }
     }
 
@@ -47,24 +54,36 @@ public class LocationContent {
     }
 */
     public static class LocationItem {
-        public final String id;
-        public final String locationName;
-        public final String locationStreetName;
-        public final String locationPostcode;
-        public final String details;
+        public final String mID;
+        public final String mLocationType;
+        public final String mLocationName;
+        public final String mLocationStreetName;
+        public final String mLocationPostcode;
+        public final int mLocationImage;
+        public final String mDetails;
+        private boolean isFavourite = false;
 
-        public LocationItem(String id, String locationName, String locationStreetName, String locationPostcode, String details) {
-            this.id = id;
-            this.locationName = locationName;
-            this.locationStreetName = locationStreetName;
-            this.locationPostcode = locationPostcode;
-            this.details = details;
+        public LocationItem(String id, String locationType, String locationName, String locationStreetName, String locationPostcode, int locationImage, String details) {
+            this.mID = id;
+            this.mLocationType = locationType;
+            this.mLocationName = locationName;
+            this.mLocationStreetName = locationStreetName;
+            this.mLocationPostcode = locationPostcode;
+            this.mLocationImage = locationImage;
+            this.mDetails = details;
         }
 
+        public boolean isFavourite() {
+            return isFavourite;
+        }
+
+        public void setFavourite(boolean favourite) {
+            isFavourite = favourite;
+        }
 
         @Override
         public String toString() {
-            return locationName;
+            return mLocationName;
         }
     }
 }

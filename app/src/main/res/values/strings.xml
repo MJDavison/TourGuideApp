@@ -1,22 +1,23 @@
 <resources>
     <string name="app_name">Tour Guide App</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="charlesChurchDetails">Details</string>
-    <string name="charles_church_details">Charles Church Details</string>
-    <string name="theatre_royal_details">Theatre Royal D#etails</string>
-    <string name="the_tudor_rose_details">The Tudor Rose Details</string>
-    <string name="drake_circus_details">Drakes Circus</string>
     <string name="charles_church_name">Charles Church</string>
     <string name="theatre_royal_plymouth_name">Theatre Royal Plymouth</string>
-    <string name="the_tudor_rose_name"><![CDATA[The Tudor Rose Tea Rooms & Garden]]></string>
+    <string name="the_tudor_rose_name">The Tudor Rose Tea &amp; Garden</string>
     <string name="drake_circus_name">Drake Circus Shopping Centre</string>
+
     <string name="charles_church_street">Charles Street</string>
     <string name="royal_parade_street">Royal Parade</string>
     <string name="the_tudor_rose_street">36 New Street</string>
     <string name="drakes_circus_street">1 Charles Street</string>
+
     <string name="charles_church_postcode">PL4 0BA</string>
     <string name="theatre_royal_postcode">PL1 2TR</string>
     <string name="the_tudor_rose_postcode">PL1 2NA</string>
     <string name="drake_circus_postcode">PL1 1EA</string>
+
+    <string name="charles_church_details">"Charles Church is the second most ancient parish church in Plymouth, Devon in England. The senior church is St Andrew's Church, the mother church of Plymouth.\n\nThe church was an important centre of spiritual life for the city for 300 years; boasted a number of important clergy; and was the mother of many existing churches. During the nights of 21 and 22 March 1941, the church was entirely burned out by incendiary bombs. Although now a monument, the tradition of ministry at \"Charles\" is not lost and is carried on by the Parish of Charles with St Matthias, one of its daughter churches a quarter of a mile away to the north. It is an important landmark for the city of Plymouth.\n\nThere have been several histories made of the church including two written in the early 20th century. Most focus on the fabric of the building rather than the spiritual life of the church and ministers, of whom Robert Hawker was a notable figure. There are several short accounts of his life and some much longer works. \n\nCredit to: https://en.wikipedia.org/wiki/Charles_Church,_Plymouth"</string>
+    <string name="theatre_royal_details">"Theatre Royal, Plymouth, is a theatre venue in Plymouth, Devon. It consists of a 1,300-seat main auditorium, The Lyric, which regularly hosts large-scale musicals, opera and ballet; a 200-seat studio, The Drum; and a 50-seat studio, The Lab. On a separate site, Theatre Royal Plymouth also has a production and learning centre, TR2, featuring rehearsal studios and workshops for the production of set and costumes. \n\nThe theatre is a National Portfolio Organisation, receiving regular funding from Arts Council England.\\n\\nA £7 million Regeneration Project was completed in September 2013 with a renovated front of house area and community performance space called The Lab.\n\nA 7-metre-high (23 ft) bronze sculpture depicting a crouching female actor called Messenger is due to be erected in front of the theatre.\n\nCredit To: https://en.wikipedia.org/wiki/Theatre_Royal,_Plymouth"</string>
+    <string name="drake_circus_details">"Drake Circus Shopping Centre is a 425,000-square-foot (39,484 m2) covered shopping mall in the centre of Plymouth, England, which opened in October 2006.\n\nThe building was designed by London-based architects Chapman Taylor and built by Bovis Lend Lease. Situated behind the ruined Charles Church, preserved as the city\'s civilian war memorial, the building provoked a mixed reception. Just after it opened, the shopping centre won the inaugural Carbuncle Cup \"for crimes against architecture\", as the worst new building in the United Kingdom.In 2007 it won two retail industry national awards, one of which was the Retail Week magazine\'s \"Shopping Location of the Year\". \n\nCredit to: https://en.wikipedia.org/wiki/Drake_Circus_Shopping_Centre"</string>
+    <string name="the_tudor_rose_details">"The Tudor Rose Tearooms and Garden is situated in one of the beautiful listed buildings on New Street on the Barbican, one of the oldest streets in Plymouth. We have lovingly renovated the Tudor Rose breathing new life into its quaint tearoom, charming lounge, elegant patio and historic walled English garden. Our ancient cobbled lane is only meters from the world-famous Mayflower steps where the pilgrim fathers set sail in 1620 to discover America and the new world.\n\n Credit To: https://tudorrosetearooms.com/about-us/"</string>
 </resources>

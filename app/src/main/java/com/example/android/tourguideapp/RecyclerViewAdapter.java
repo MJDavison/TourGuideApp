@@ -23,7 +23,7 @@ public class RecyclerViewAdapter
 
             Context context = v.getContext();
             Intent intent = new Intent(context, LocationDetailActivity.class);
-            intent.putExtra(LocationDetailFragment.ARG_ITEM_ID, item.id);
+            intent.putExtra(LocationDetailFragment.ARG_ITEM_ID, item.mID);
 
             context.startActivity(intent);
         }
@@ -46,7 +46,7 @@ public class RecyclerViewAdapter
     public void onBindViewHolder(ViewHolder holder, int position) {
 
 
-        holder.mContentView.setText(mDataset.get(position).locationName);
+        holder.mContentView.setText(mDataset.get(position).mLocationName);
 
         holder.itemView.setTag(mDataset.get(position));
         holder.itemView.setOnClickListener(mOnClickListener);

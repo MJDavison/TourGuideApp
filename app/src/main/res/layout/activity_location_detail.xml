@@ -19,6 +19,8 @@
             android:id="@+id/toolbar_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            app:collapsedTitleGravity="center"
+            app:expandedTitleGravity="center"
             android:fitsSystemWindows="true"
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
@@ -47,8 +49,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|start"
         android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="#FFFFFF"
         app:layout_anchor="@+id/item_detail_container"
         app:layout_anchorGravity="top|end"
-        app:srcCompat="@drawable/ic_favorite" />
+        app:srcCompat="@drawable/ic_unfavourite" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
