@@ -22,7 +22,7 @@ public class ShoppingFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_discover, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_list, container, false);
 
         recyclerView = rootView.findViewById(R.id.recycler_view);
         assert recyclerView != null;

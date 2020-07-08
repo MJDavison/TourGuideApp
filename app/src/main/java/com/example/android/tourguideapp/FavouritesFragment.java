@@ -22,7 +22,7 @@ public class FavouritesFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_discover, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_list_favourite, container, false);
 
         recyclerView = rootView.findViewById(R.id.recycler_view);
         assert recyclerView != null;
@@ -38,7 +38,7 @@ public class FavouritesFragment extends Fragment {
     }*/
 
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
-        mAdapter = new RecyclerViewAdapter((MainActivity) getActivity(), LocationContent.Favourites);
+        mAdapter = new RecyclerViewAdapterFavourites((MainActivity) getActivity(), LocationContent.Favourites);
         recyclerView.setAdapter(mAdapter);
     }
 
