@@ -21,17 +21,22 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new DiscoverFragment();
+                return new HistoricalFragment();
             case 1:
-                return new FavouritesFragment();
+                return new EntertainmentFragment();
+            case 2:
+                return new RestaurantFragment();
+            case 3:
+                return new ShoppingFragment();
             default:
-                return new DiscoverFragment();
+                return new FavouritesFragment();
+
         }
     }
 
     @Override
     public int getCount() {
-        return 2;
+        return 5;
     }
 
     @Nullable
@@ -39,11 +44,15 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                return "Discover";
+                return HistoricalFragment.TAB_NAME;
             case 1:
-                return "Favourites";
+                return EntertainmentFragment.TAB_NAME;
+            case 2:
+                return RestaurantFragment.TAB_NAME;
+            case 3:
+                return ShoppingFragment.TAB_NAME;
             default:
-                return "Discover!";
+                return FavouritesFragment.TAB_NAME;
         }
     }
 }

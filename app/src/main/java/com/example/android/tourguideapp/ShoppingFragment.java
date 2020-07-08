@@ -11,12 +11,12 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-public class FavouritesFragment extends Fragment {
+public class ShoppingFragment extends Fragment {
+    public static final String TAB_NAME = "Shopping";
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
-    public static final String TAB_NAME = "Favourites";
 
-    public FavouritesFragment() {
+    public ShoppingFragment() {
     }
 
     @Nullable
@@ -27,18 +27,14 @@ public class FavouritesFragment extends Fragment {
         recyclerView = rootView.findViewById(R.id.recycler_view);
         assert recyclerView != null;
         setupRecyclerView((RecyclerView) recyclerView);
-        //   createLocations();
+
 
         return rootView;
     }
 
-    /*private void createLocations() {
-        addItemToFavourites(new LocationContent.LocationItem("1", getString(R.string.charles_church_name), getString(R.string.charles_church_street), getString(R.string.charles_church_postcode), getString(R.string.charles_church_details)));
-        addItemToFavourites(new LocationContent.LocationItem("2", getString(R.string.theatre_royal_plymouth_name), getString(R.string.royal_parade_street), getString(R.string.theatre_royal_postcode), getString(R.string.theatre_royal_details)));
-    }*/
 
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
-        mAdapter = new RecyclerViewAdapter((MainActivity) getActivity(), LocationContent.Favourites);
+        mAdapter = new RecyclerViewAdapter((MainActivity) getActivity(), LocationContent.shopping);
         recyclerView.setAdapter(mAdapter);
     }
 

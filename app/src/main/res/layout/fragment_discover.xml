@@ -8,5 +8,5 @@
     android:layout_height="match_parent"
     android:layout_marginHorizontal="16dp"
     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-    tools:context=".DiscoverFragment"
+    tools:context=".HistoricalFragment"
     tools:listitem="@layout/location_object" />

@@ -7,15 +7,20 @@ import java.util.Map;
 public class LocationContent {
     public static final Map<String, LocationItem> LIST_ITEM_MAP = new HashMap<String, LocationItem>();
     public static final Map<String, LocationItem> FAVOURITES_ITEM_MAP = new HashMap<String, LocationItem>();
-    static ArrayList<LocationItem> List = new ArrayList<>();
+    static ArrayList<LocationItem> fullList = new ArrayList<>();
+
+    static ArrayList<LocationItem> historical = new ArrayList<>();
+    static ArrayList<LocationItem> entertainment = new ArrayList<>();
+    static ArrayList<LocationItem> restaurant = new ArrayList<>();
+    static ArrayList<LocationItem> shopping = new ArrayList<>();
+
     static ArrayList<LocationItem> Favourites = new ArrayList<>();
 
     public static void addItemToList(LocationItem item) {
-        if (!List.contains(item)) {
-            List.add(item);
+        if (!fullList.contains(item)) {
+            fullList.add(item);
             LIST_ITEM_MAP.put(item.mID, item);
         }
-
     }
 
     public static void addItemToFavourites(LocationItem item) {
