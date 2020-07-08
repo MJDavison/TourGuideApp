@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
         android:adjustViewBounds="true"
-        android:contentDescription="A list for images"
+        android:contentDescription="@string/a_list_for_images"
         android:scaleType="fitXY"
         android:textAlignment="center"
         android:textAppearance="?attr/textAppearanceListItem" />
