@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 
 public class ShoppingFragment extends Fragment {
-    public static final String TAB_NAME = "Shopping";
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
 

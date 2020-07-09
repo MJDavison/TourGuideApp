@@ -22,4 +22,9 @@
     <string name="the_tudor_rose_details">"The Tudor Rose Tearooms and Garden is situated in one of the beautiful listed buildings on New Street on the Barbican, one of the oldest streets in Plymouth. We have lovingly renovated the Tudor Rose breathing new life into its quaint tearoom, charming lounge, elegant patio and historic walled English garden. Our ancient cobbled lane is only meters from the world-famous Mayflower steps where the pilgrim fathers set sail in 1620 to discover America and the new world.\n\n Credit To: https://tudorrosetearooms.com/about-us/"</string>
     <string name="a_picture_of_the_location">A picture of the location</string>
     <string name="a_list_for_images">A list for images</string>
+    <string name="entertainment_tab_label">Have Fun</string>
+    <string name="favourites_tab_label">Favourites</string>
+    <string name="historical_tab_label">Historical</string>
+    <string name="restaurant_tab_label">Eat Out</string>
+    <string name="shopping_tab_label">Shopping</string>
 </resources>

@@ -44,15 +44,15 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                return HistoricalFragment.TAB_NAME;
+                return mContext.getString(R.string.historical_tab_label);
             case 1:
-                return EntertainmentFragment.TAB_NAME;
+                return mContext.getString(R.string.entertainment_tab_label);
             case 2:
-                return RestaurantFragment.TAB_NAME;
+                return mContext.getString(R.string.restaurant_tab_label);
             case 3:
-                return ShoppingFragment.TAB_NAME;
+                return mContext.getString(R.string.shopping_tab_label);
             default:
-                return FavouritesFragment.TAB_NAME;
+                return mContext.getString(R.string.favourites_tab_label);
         }
     }
 }

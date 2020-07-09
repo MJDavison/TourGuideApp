@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 
 public class RestaurantFragment extends Fragment {
-    public static final String TAB_NAME = "Eat Out";
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
 

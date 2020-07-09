@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 public class FavouritesFragment extends Fragment {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
-    public static final String TAB_NAME = "Favourites";
+
 
     public FavouritesFragment() {
     }

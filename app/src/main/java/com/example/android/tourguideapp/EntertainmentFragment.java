@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 
 public class EntertainmentFragment extends Fragment {
-    public static final String TAB_NAME = "Have Fun";
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
 

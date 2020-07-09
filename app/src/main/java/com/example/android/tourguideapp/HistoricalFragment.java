@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 
 public class HistoricalFragment extends Fragment {
-    public static final String TAB_NAME = "Historical";
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
 
